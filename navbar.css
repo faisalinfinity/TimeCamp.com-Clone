@@ -1,0 +1,43 @@
+.navbar-nav {
+    margin: auto;
+    display: flex;
+
+    width: 90%;
+    justify-content: space-evenly;
+
+    align-items: center;
+  }
+  .nav-item button {
+    background-color: #f7b801;
+    width: 200%;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    color: #ffff;
+    font-weight: bold;
+  }
+  nav {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .alert {
+    background-color: #25cf60;
+    color: #ffff;
+    text-align: center;
+  }
+
+  @media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+      display: none;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+    .navbar .nav-item .dropdown-menu {
+      margin-top: 0;
+    }
+  }
+  .nav-link{
+    color: black;
+  }

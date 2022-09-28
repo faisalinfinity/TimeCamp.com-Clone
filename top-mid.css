@@ -1,0 +1,68 @@
+.bg-image {
+    width: 100%;
+  }
+  #top-div > div {
+    border: 2px solid red;
+    width: 100%;
+    height: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 80%;
+    justify-content: center;
+    gap: 30px;
+  }
+  #top-div > div > div {
+    border: 2px solid green;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+  #top-div > div > div > div {
+    border: 2px solid red;
+    height: 50%;
+  }
+  #top-div > div > div:first-child {
+    background-color: #ffff;
+    opacity: 0.9;
+  }
+  #top-div > div > div:first-child > ul {
+    list-style: none;
+  }
+  #top-div > div > div:first-child > ul li::before {
+    content: "✓";
+  }
+  #top-div > div > div:first-child > * {
+    margin: auto;
+    width: 60%;
+  }
+  #left-mid {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  #left-mid > button {
+    border-radius: 30px;
+    background-color: #25cf60;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .visible {
+    background-color: #ffff;
+    visibility: visible;
+    opacity: 0.9;
+    transition: opacity 2s linear;
+    margin-bottom: 30px;
+
+  }
+  .visible>img{
+    width:15%;
+    display: block;
+  }
+  .visible *{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5px;
+  }
