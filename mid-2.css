@@ -1,0 +1,126 @@
+.review {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .review > .blog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    margin-top: 20px;
+  }
+  .review > .blog > div {
+    border-radius: 10px;
+    word-wrap: wrap;
+    text-align: justify;
+    padding: 20px;
+  }
+  .review > h2 {
+    width: 40%;
+    margin: auto;
+  }
+  .review > div:nth-child(3) {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .rating {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .rating > img {
+    display: block;
+    width: 10%;
+  }
+  #integration {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: #f3f3f3;
+  }
+  #integration > div {
+    margin-top: 40px;
+  }
+  .app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .app img {
+    width: 20%;
+  }
+  .pricing {
+    text-align: center;
+  }
+
+  .plans {
+    width: 80%;
+    margin: auto;
+    
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+    gap: 20px;
+  }
+  .plans > div {
+    
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .mybtn {
+    border-radius: 30px;
+    background-color: #25cf60;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 200px;
+    color: #f3f3f3;
+    border: none;
+  }
+  ul {
+    text-align: justify;
+  }
+  .plans > div > p {
+    color: grey;
+  }
+  .colorr{
+    color: #25cf60;
+  }
+  .white{
+    color: #f3f3f3;
+  }
+  .switch{
+    width: 327px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+  .switch>button{
+    width: 160px;
+    height: 60px;
+    border-radius: 30px;
+            
+
+  }
+  .switch>button:first-child{
+    margin-right: -50px;
+    opacity: 0.9;
+    background-color:#25cf60;
+  }
+  .switch>button:nth-child(2){
+    background-color: #25cf60;
+
+
+  }
