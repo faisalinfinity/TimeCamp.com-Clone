@@ -1,0 +1,138 @@
+.copyright>div{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+
+}
+.blue {
+color: #85baef;
+}
+.mtop {
+margin-top: 60px;
+}
+.center {
+text-align: center;
+margin: auto;
+margin-top: 60px;
+margin-bottom: 30px;
+}
+.switch {
+width: 600px;
+margin-top: 50px;
+}
+.switch > input {
+width: 300px;
+height: 60px;
+border-radius: 30px;
+margin-right: -40px;
+border: none;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.switch > a > button {
+border: none;
+color: aliceblue;
+width: 200px;
+height: 60px;
+border-radius: 30px;
+background-color: #25cf60;
+}
+#team {
+margin-top: 200px;
+}
+.sch {
+width: 80%;
+height: 100px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+margin: auto;
+margin-top: 40px;
+background-color: #f8f8f9;
+border-radius: 4px;
+margin-bottom: 50px;
+}
+.story {
+width: 60%;
+height: auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+margin: auto;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+  rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+margin-top: 20px;
+padding: 20px;
+}
+.story > img {
+display: block;
+width: 60%;
+height: 100%;
+}
+.blog {
+width: 80%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+gap: 10px;
+}
+.blog > div {
+padding: 10px;
+}
+.blog > div > img {
+width: 100%;
+margin-bottom: 20px;
+}
+.last {
+width: 80%;
+height: 400px;
+
+margin: auto;
+border-radius: 18px;
+background-color: #f8f8f9;
+text-align: center;
+padding: 80px;
+display: flex;
+flex-direction: column;
+}
+.last > h1 {
+width: 60%;
+margin: auto;
+}
+.last > p {
+width: 50%;
+margin: auto;
+}
+.last > div > a:nth-child(1) > button {
+background-color: #f7b801;
+color: black;
+}
+.last > div > a:nth-child(2) > button {
+background-color: #f8f8f9;
+border: 1px solid #f7b801;
+color: black;
+}
+.footer {
+width: 80%;
+height: 300px;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: auto;
+margin: auto;
+margin-top: 90px;
+}
+.footer > div {
+display: flex;
+flex-direction: column;
+}
+.footer > div > a {
+color: gray;
+text-decoration: none;
+}
+.footer > div > a:hover {
+color: #f7b801;
+text-decoration: none;
+}
