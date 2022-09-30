@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="top-mid.css" />
+    <link rel="stylesheet" href="signup-layout.css" />
+    <style>
+      #sign-in {
+        border: 0 solid black;
+        width: 80%;
+        margin: auto;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      #sign-in > div {
+        border: 0 solid green;
+        width: 50%;
+        height: 70%;
+        margin: auto;
+      }
+      #chrome {
+        border-radius: 30px;
+        background-color: #25cf60;
+        padding: 12px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: aliceblue;
+        border: none;
+        margin-top: 20px;
+      }
+      #chrome img {
+        width: 10%;
+      }
+      #sign-in > div >div{
+        width: 80%;
+        text-align: start;
+        word-wrap: wrap;
+        font-weight: bolder;
+        font-size: 50px;
+        margin-top: 20px;
+      }
+      #width>img{
+        width: 15%;
+        display: block;
+
+      }
+      #width{
+        display: flex;
+        gap: 10px;
+        border: 0 solid red;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 20px;
+      }
+      sign-in>div>#form2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      @media all and (min-width:768px) and (max-width:1024px){
+
+        #sign-in {
+        border: 0 solid black;
+        width: 100%;
+        margin: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+      }
+      #sign-in > div {
+        
+        width: 80%;
+        height: auto;
+        margin: auto;
+      }
+
+
+
+
+      }
+      @media all and (min-width:280px) and (max-width:768px){
+
+#sign-in {
+
+width: 100%;
+margin: auto;
+height: auto;
+display: grid;
+grid-template-columns: repeat(1,1fr)
+}
+#sign-in > div {
+
+width: 80%;
+height: auto;
+margin: auto;
+}
+
+
+
+
+}
+     
+    </style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            style="display: block"
+            src="https://cdn-m.timecamp.com/img/greenbranding/colorLogo.svg"
+            alt=""
+          />
+        </a>
+      </div>
+    </nav>
+    <div id="sign-in">
+      <div>
+        <p>PRODUCT UPDATE</p>
+        <div>
+          <p>
+            TimeCamp Plugin for Google <br />
+            Chrome
+          </p>
+          <h2>Track time without leaving Chrome in 70+ online apps.</h2>
+        </div>
+        <button id="chrome">
+          <img
+            src="https://cdn.timecamp.com/res/css/images/chrome-icon-button.1664285843.png"
+            alt=""
+          />
+          Add TimeCamp for Chrome
+        </button>
+        <div id="width" style="width:100% ;">
+          <img
+            src="https://cdn.timecamp.com/res/css/images/crozdesk-icon.1664285843.png"
+            alt=""
+          /><img
+            src="https://cdn.timecamp.com/res/css/images/capterra-icon.1664285843.png"
+            alt=""
+          /><img
+            src="https://cdn.timecamp.com/res/css/images/crowd-icon.1664285843.png"
+            alt=""
+          /><img
+            src="https://cdn.timecamp.com/res/css/images/get-app-icon.1664285843.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div> <form id="form2" action="">
+        <h4 style="margin-top:60px ;">Log in to TimeCamp</h4>
+       
+        <button id="google">
+          <img src="https://sso.masaischool.com/google.svg" alt="" />Log in
+          with Google
+        </button>
+        Or
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <p>Forgotten Password?</p>
+        
+        <div id="left-mid" style="width: 100%; height: auto">
+          <button type="submit" class="btn btn-success btn-lg">
+            Log In
+          </button>
+        </div>
+        <p>
+          <a style="color: #25cf60" href="https://app.timecamp.com/auth/register"
+            >No account Sign up</a
+          >
+          or
+          <a
+            style="color: #25cf60"
+            href="https://app.timecamp.com/saml/auth"
+          >
+          Log in with SSO</a
+          >
+        </p>
+      </form></div>
+    </div>
+  </body>
+</html>
