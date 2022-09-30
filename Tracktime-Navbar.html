@@ -12,6 +12,9 @@
     />
     <link rel="stylesheet" href="navbar.css" />
     <style>
+      .none {
+        list-style: none;
+      }
       .sidenav {
         position: fixed;
         top: 0;
@@ -22,7 +25,7 @@
         height: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 0 8px;
       }
       .sidenav a {
         color: black;
@@ -32,7 +35,7 @@
         width: 10%;
       }
       .solid {
-        border-top: 0 solid;
+        border-top: 2px solid gray;
       }
       .sidenav p {
         font-size: 16px;
@@ -42,7 +45,7 @@
         width: 60%;
       }
       #body {
-        width: 100%;
+        width: 80%;
         margin-left: 250px;
       }
       #alert {
@@ -52,80 +55,249 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        
       }
-      #timer{
+      #timer {
         width: 3%;
       }
-      .subscribe{
+      .subscribe {
         width: 12%;
         border: 0 solid green;
       }
-      .subscribe>button{
+      .subscribe > button {
         width: 100%;
-        background-color:#f7b801 ;
+        background-color: #f7b801;
         padding: 8px;
         color: white;
         border-radius: 10px;
         border: none;
-
       }
-      .subscribe1>button{
+      .subscribe1 > button {
         width: 100%;
-        background-color:#ffff ;
+        background-color: #ffff;
         padding: 8px;
         color: black;
         border-radius: 10px;
         border: none;
         border: 1px solid gray;
-
       }
-      .subscribe1{
+      .subscribe1 {
         width: 8%;
         border: 0 solid green;
       }
       .dropdownimg {
- width: 30%;
-}
+        width: 30%;
+      }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+      #secnav {
+        display: flex;
+        justify-content: end;
+        background-color: #ffff;
+        border: 1px solid grey;
+        margin-top: -10;
+      }
+      .dropdown-content img {
+        width: 20%;
+      }
+      #mainbody {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+      }
+      #mainbody > div {
+        border: 0 solid red;
+      }
+      #mainbody > div:first-child > p {
+        width: 70%;
+        font-size: 20px;
+        padding-left: 30px;
+        padding-top: 30px;
+      }
+      #mainbody > div:nth-child(2) > div:first-child {
+        border: 0 solid black;
+        width: 90%;
+        height: 50%;
+        margin: auto;
+        margin-top: 30px;
+
+        padding: 20px;
+        background-color: #ebf5fb;
+      }
+      #mainbody > div:nth-child(2) > div > img {
+        width: 100%;
+      }
+      #mainbody > div:nth-child(2) > div > p > img {
+        width: 10%;
+      }
+      .dbtn {
+        width: 90%;
+        height: 40px;
+        display: block;
+        margin: auto;
+        border-radius: 8px;
+        background-color: #4bb063;
+        color: #ebf5fb;
+      }
+      #icon{
+         padding-left: 40px;
+         margin-top: 30px;
+        
+        border: 0 solid black;
+        height: 100px;
+        display: flex;
+        
+
+      }
+      .dbtn>img{
+        width: 5%;
+      }
+      #icon img{
+        width: 100%;
+        
+      }
+      #icon>a{
+        width: 10%;
+        margin: auto;
+        
+        border: 0 solid red;
 
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-
-.dropdown:hover .dropdown-content {display: block;}
-
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+      }
+      .noline{
+        text-decoration: none;
+        color: grey;
+      }
+    @media all and (min-width:768px) and (max-width:1024px){
+        #secnav {
+            
       
+        background-color: #ffff;
+        border: 1px solid grey;
+        margin-top: -10;
+      }
+        #alert {
+        background-color: #ffff;
+        color: black;
+        margin: auto;
+        
+    
+        
+        
+      }
+        .subscribe {
+        width: 12%;
+        border: 0 solid green;
+        margin-right: 100px;
+      }
+      .subscribe > button {
+        width: 120px;
+        background-color: #f7b801;
+        padding: 8px;
+        color: white;
+        border-radius: 10px;
+        border: none;
+      }
+      .subscribe1 > button {
+        width: 120px;
+        background-color: #ffff;
+        padding: 8px;
+        color: black;
+        border-radius: 10px;
+        border: none;
+        border: 1px solid gray;
+      }
+      .subscribe1 {
+        width: 8%;
+        border: 0 solid green;
+      }
+
+
+
+
+    }
+    @media all and (min-width:280px) and (max-width:768px){
+        #body {
+        width: 90%;
+        margin-left: 250px;
+      }
+        #alert {
+        background-color: #ffff;
+        color: black;
+        margin: auto;
+        
+    
+        
+        
+      }
+        .subscribe {
+        width: 12%;
+        border: 0 solid green;
+        margin-right: 70px;
+      }
+      .subscribe > button {
+        width: 100px;
+        background-color: #f7b801;
+        padding: 8px;
+        color: white;
+        border-radius: 10px;
+        border: none;
+      }
+      .subscribe1 > button {
+        width: 120px;
+        background-color: #ffff;
+        padding: 8px;
+        color: black;
+        border-radius: 10px;
+        border: none;
+        border: 1px solid gray;
+      }
+      .subscribe1 {
+        width: 8%;
+        border: 0 solid green;
+      }
+
+
+        
+    }
     </style>
   </head>
   <body>
     <div>
-      <div class="sidenav">
+      <div  class="sidenav">
         <a href=""
-          ><img
+          ><img 
             id="logo"
             src="https://cdn-m.timecamp.com/img/greenbranding/press/timecamp-pr-materials/svg/colorLogo.svg"
             alt=""
@@ -134,7 +306,7 @@
         <hr class="solid" />
         <p>Track</p>
         <a href=""
-          ><img
+          ><img 
             src="https://cdn1.iconfinder.com/data/icons/material-design-icons-light/24/clock-128.png"
             alt=""
           />
@@ -143,7 +315,7 @@
         <hr class="solid" />
         <p>ANALYZE</p>
         <a href=""
-          ><img
+          ><img 
             src="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-295_dashboard_gauge-128.png"
             alt=""
           />
@@ -151,14 +323,14 @@
         >
 
         <a href=""
-          ><img
+          ><img 
             src="https://cdn1.iconfinder.com/data/icons/linicons-business-finance-i/1550/pie_chart_graph_reports-128.png"
             alt=""
           />
           Reports</a
         >
         <a href=""
-          ><img
+          ><img 
             src="https://cdn2.iconfinder.com/data/icons/hardware-devices-and-gadgets-2/64/hardware_device_laptop_macbook-128.png"
             alt=""
           />
@@ -167,14 +339,14 @@
         <hr class="solid" />
         <p>MANAGE</p>
         <a href=""
-          ><img
+          ><img 
             src="https://cdn0.iconfinder.com/data/icons/ikooni-outline-free-basic/128/free-11-128.png"
             alt=""
           />
           Projects</a
         >
         <a href=""
-          ><img
+          ><img 
             src="https://cdn2.iconfinder.com/data/icons/seo-and-digital-marketing-16/100/3-128.png"
             alt=""
           />
@@ -182,39 +354,213 @@
         >
         <hr class="solid" />
         <a href=""
-          ><img
+          ><img 
             src="https://cdn2.iconfinder.com/data/icons/linkedin-ui/48/jee-100-128.png"
             alt=""
           />
           Users</a
         >
       </div>
-      <div id="body">
-
+      <div class="container-fluid" id="body">
         <div id="alert" class="alert alert-success" role="alert">
-          <img id="timer"
+          <img 
+            id="timer"
             src="https://cdn2.iconfinder.com/data/icons/business-smoth-line-vol-2/30/hourglass__timer__stopwatch__deadline__sand-128.png"
             alt=""
-          /> 
-          <p> <b>11 days</b>
-          left in your Pro trial  </p>
-            <a class="subscribe"  aria-current="page" href="#"
-              ><button>Subscribe to Pro</button></a
-            >
-            <a class="subscribe1"  aria-current="page" href="#"
+          />
+          <p><b>11 days</b> left in your Pro trial</p>
+          <a class="subscribe" aria-current="page" href="#"
+            ><button>Subscribe to Pro</button></a
+          >
+          <a class="subscribe1" aria-current="page" href="#"
             ><button>Book a demo</button></a
           >
-         
         </div>
-        <div class="alert">
-            <div class="dropdown">
-                <img src="https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-06-128.png" class="dropdownimg" alt="">
-                <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div>
+        <div id="secnav" class="alert">
+          <div class="dropdown">
+            <img 
+              src="https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-06-128.png"
+              class="dropdownimg"
+              alt=""
+            />
+            <div class="dropdown-content">
+              <a href="#"
+                ><img 
+                  src="https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-06-128.png"
+                  alt=""
+                />
+                Settings</a
+              >
+              <a href="#"
+                ><img 
+                  src="https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-50-128.png"
+                  alt=""
+                />
+                Integration</a
+              >
+              <a href="#"
+                ><img 
+                  src="https://cdn0.iconfinder.com/data/icons/iconoteka-stroke/24/iconoteka_credit_card__payment_b_s-128.png"
+                  alt=""
+                />
+                Subscription</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <img 
+              src="https://cdn3.iconfinder.com/data/icons/material-line-thin/1024/question-128.png"
+              class="dropdownimg"
+              alt=""
+            />
+            <div class="dropdown-content">
+              <a href="#"
+                ><img 
+                  src="https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-25-128.png"
+                  alt=""
+                />
+                Help</a
+              >
+              <a href="#"
+                ><img 
+                  src="https://cdn3.iconfinder.com/data/icons/aami-web-internet/64/aami4-97-128.png"
+                  alt=""
+                />
+                Knowledge base</a
+              >
+              <a href="#"
+                ><img 
+                  src="https://cdn0.iconfinder.com/data/icons/influencer-line/48/feedback_comment_survey_review-128.png"
+                  alt=""
+                />
+                Send feedback</a
+              >
+              <a href="#"
+                ><img 
+                  src="https://cdn4.iconfinder.com/data/icons/48-bubbles/48/39.Heart-128.png"
+                  alt=""
+                />
+                Become a Partner</a
+              >
+              <hr class="solid" />
+              <a href="#"
+                ><img 
+                  src="https://cdn4.iconfinder.com/data/icons/e-commerce-shopping/100/gift-128.png"
+                  alt=""
+                />
+                What's New</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <img 
+              src="https://cdn0.iconfinder.com/data/icons/outline-ui-part-2-of-4/100/pack04-17-128.png"
+              class="dropdownimg"
+              alt=""
+            />
+          </div>
+          <div class="dropdown">
+            <img 
+              src="https://cdn0.iconfinder.com/data/icons/phosphor-duotone-vol-3/256/user-circle-duotone-128.png"
+              class="dropdownimg"
+              alt=""
+            />
+            <div class="dropdown-content">
+              <a href="#"
+                ><img 
+                  src="https://cdn0.iconfinder.com/data/icons/eon-social-media-contact-info-2/32/user_people_person_users_man-128.png"
+                  alt=""
+                />
+                <p id="user">Usename</p>
+                <p id="mail">email</p></a
+              >
+              <hr class="solid" />
+              <a href="#"
+                ><img 
+                  src="https://cdn0.iconfinder.com/data/icons/freebies/24/desktop-monitor-download-128.png"
+                  alt=""
+                />
+                Download App</a
+              >
+              <a href="#"
+                ><img 
+                  src="https://cdn2.iconfinder.com/data/icons/budicon-web/16/2-web_-_browse_internet_network-128.png"
+                  alt=""
+                />
+                Browser Plugin</a
+              >
+              <hr class="solid" />
+              <a href="#"
+                ><img 
+                  src="https://cdn3.iconfinder.com/data/icons/multimedia-24px/24/power_off_shut_down_log_out-128.png"
+                  alt=""
+                />
+                Logout</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="mainbody">
+          <div>
+            <p>TimeCamp - Desktop Application</p>
+            <p>Computer Usage Statistics</p>
+            <ul class="none">
+              TimeCamp can track applications and sites you are actively using.
+              <li>» comprehensive reports about your time usage</li>
+              <li>» track time spend on applications</li>
+              <li>» track time spend on websites</li>
+            </ul>
+            <p>Simple Time Tracking</p>
+            <ul class="none">
+              Most simple time tracking application right from your desktop.
+              <li>» projects and tasks</li>
+              <li>» effortless time tracking</li>
+              <li>» automatic stopwatch</li>
+            </ul>
+
+            <p>Effortless & Automatic</p>
+            <ul class="none">
+              TimeCamp captures your time automatically, so you don't need to.
+              <a href="">Windows <sub>(v. 1.7.2.0)</sub> </a>
+              <a href="">Mac <sub>(v. 1.7.2.0)</sub></a
+              ><a href=""> Ubuntu 64-bit <sub>(v. 1.7.2.0)</sub> </a>
+              <li>» idle time detection</li>
+              <li>» works offline</li>
+              <li>» lightweight app - 7 MB</li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <img 
+                src="https://cdn.timecamp.com/res/css/dashboard/timesheet-activities.1664454266.png"
+                alt=""
+              />
+              <p>
+                <img 
+                  src="https://cdn2.iconfinder.com/data/icons/boxicons-solid-vol-2/24/bxs-error-circle-128.png"
+                  alt=""
+                />By default all above features are activated. If you have any
+                privacy concerns you can easily change desktop app behaviour by
+                going to Settings > Add-ons > Desktop App Settings page.
+              </p>
+            </div>
+            <a href="" style="text-decoration: none;"
+              ><button class="dbtn">
+                <img 
+                  src="https://cdn0.iconfinder.com/data/icons/digital-tech-black-and-white-2/400/Box_Download-128.png"
+                  alt=""
+                />Download TimeCamp</button
+            ></a>
+            <div id="icon">
+              <a class="noline" href=""><img  src="https://cdn.timecamp.com/res/css/dashboard//sys-logo/win.1664454266.svg" alt="" />  <p >Windows</p></a>
+            
+              <a class="noline" href=""><img  src="https://cdn.timecamp.com/res/css/dashboard//sys-logo/osx.1664454266.svg" alt="" /><p >MacOS</p></a>
+              
+              <a class="noline" href=""><img  src="https://cdn.timecamp.com/res/css/dashboard//sys-logo/ubuntu.1664454266.svg" alt="" />   <p  >Ubuntu</p></a>
+           
+            </div>
+          </div>
         </div>
       </div>
     </div>
