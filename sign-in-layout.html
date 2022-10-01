@@ -12,110 +12,9 @@
     />
     <link rel="stylesheet" href="top-mid.css" />
     <link rel="stylesheet" href="signup-layout.css" />
+    <link rel="stylesheet" href="signin.css">
     <style>
-      #sign-in {
-        border: 0 solid black;
-        width: 80%;
-        margin: auto;
-        height: 800px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-      }
-      #sign-in > div {
-        border: 0 solid green;
-        width: 50%;
-        height: 70%;
-        margin: auto;
-      }
-      #chrome {
-        border-radius: 30px;
-        background-color: #25cf60;
-        padding: 12px;
-        font-size: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        color: aliceblue;
-        border: none;
-        margin-top: 20px;
-      }
-      #chrome img {
-        width: 10%;
-      }
-      #sign-in > div >div{
-        width: 80%;
-        text-align: start;
-        word-wrap: wrap;
-        font-weight: bolder;
-        font-size: 50px;
-        margin-top: 20px;
-      }
-      #width>img{
-        width: 15%;
-        display: block;
-
-      }
-      #width{
-        display: flex;
-        gap: 10px;
-        border: 0 solid red;
-        width: 100%;
-        justify-content: space-evenly;
-        margin-top: 20px;
-      }
-      sign-in>div>#form2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-      }
-
-      @media all and (min-width:768px) and (max-width:1024px){
-
-        #sign-in {
-        border: 0 solid black;
-        width: 100%;
-        margin: auto;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        
-      }
-      #sign-in > div {
-        
-        width: 80%;
-        height: auto;
-        margin: auto;
-      }
-
-
-
-
-      }
-      @media all and (min-width:280px) and (max-width:768px){
-
-#sign-in {
-
-width: 100%;
-margin: auto;
-height: auto;
-display: grid;
-grid-template-columns: repeat(1,1fr)
-}
-#sign-in > div {
-
-width: 80%;
-height: auto;
-margin: auto;
-}
-
-
-
-
-}
+ 
      
     </style>
   </head>
@@ -172,8 +71,8 @@ margin: auto;
           with Google
         </button>
         Or
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
+        <input id="email" type="email" placeholder="Email" />
+        <input id="password" type="password" placeholder="Password" />
         <p>Forgotten Password?</p>
         
         <div id="left-mid" style="width: 100%; height: auto">
@@ -182,7 +81,7 @@ margin: auto;
           </button>
         </div>
         <p>
-          <a style="color: #25cf60" href="https://app.timecamp.com/auth/register"
+          <a style="color: #25cf60" href="Signup-layout.html"
             >No account Sign up</a
           >
           or
@@ -197,3 +96,36 @@ margin: auto;
     </div>
   </body>
 </html>
+<script>
+
+  stored=JSON.parse(localStorage.getItem("userdata"))
+
+  form=document.querySelector("form")
+  form.addEventListener("submit",function(){
+    event.preventDefault()
+
+    
+
+    stored.forEach(function(el){
+      if(form.email.value==el.email && form.password.value==el.password){
+        alert("Login Success")
+        window.open("Tracktime-Navbar.html")
+      }else if(form.email.value==el.email && form.password.value!==el.password){
+
+        alert("Incorrect Password")
+        
+      }else if(form.email.value!==el.email){
+       
+        alert("You're not Registered \n Sign Up first")
+
+        window.open("Signup-layout.html")
+
+      }
+        
+    })
+    
+  })
+
+
+
+</script>

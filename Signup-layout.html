@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="top-mid.css" />
     <link rel="stylesheet" href="signup-layout.css">
+    <link rel="stylesheet" href="feature.css">
     <style>
      
     </style>
@@ -19,14 +20,14 @@
   <body>
     <nav class="navbar fixed-top bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
+        <a class="navbar-brand" href="top-mid.html"
+          ><img 
             style="display: block"
             src="https://cdn-m.timecamp.com/img/greenbranding/colorLogo.svg"
             alt=""
           />
         </a>
-        <h6>Log in</h6>
+       <a style="text-decoration: none; color:black" href="sign-in-layout.html"> <h6>Log in</h6></a>
       </div>
     </nav>
 
@@ -45,9 +46,9 @@
             with Google
           </button>
           Or
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <input type="number" placeholder="Phone(optional)" />
+          <input id="email" type="email" placeholder="Email" />
+          <input id="password" type="password" placeholder="Password" />
+          <input id="phone" type="number" placeholder="Phone(optional)" />
           <div id="left-mid" style="width: 80%; height: auto">
             <button type="submit" class="btn btn-success btn-lg">
               Sign up for free
@@ -71,3 +72,36 @@
     </div>
   </body>
 </html>
+<script>
+ form= document.querySelector("form")
+ data= JSON.parse(localStorage.getItem("userdata")) || []
+ form.addEventListener("submit",function(event){
+  event.preventDefault()
+  let obj={
+    email:form.email.value,
+    password:form.password.value,
+    phone:form.phone.value
+  }
+  data.push(obj)
+
+  if(form.email.value=="" || 
+    form.password.value=="" || form.phone.value==""){
+
+      alert("Fill all details first")
+
+
+
+    }else{
+
+  localStorage.setItem("userdata",JSON.stringify(data))
+    }
+  
+    form.email.value=null
+    form.password.value=null
+    form.phone.value=null
+
+
+})
+
+
+</script>

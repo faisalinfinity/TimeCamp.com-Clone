@@ -2,7 +2,7 @@
     width: 100%;
   }
   #top-div > div {
-    border: 2px solid red;
+    border: 0 solid red;
     width: 100%;
     height: 95%;
     margin: auto;
@@ -13,13 +13,13 @@
     gap: 30px;
   }
   #top-div > div > div {
-    border: 2px solid green;
+    border: 0 solid green;
     display: flex;
     justify-content: end;
     flex-direction: column;
   }
   #top-div > div > div > div {
-    border: 2px solid red;
+    border: 0 solid red;
     height: 50%;
   }
   #top-div > div > div:first-child {
@@ -45,7 +45,7 @@
   #left-mid > button {
     border-radius: 30px;
     background-color: #25cf60;
-    padding: 12px;
+    padding: 10;
     font-size: 15px;
     font-weight: bold;
   }
