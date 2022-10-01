@@ -88,7 +88,7 @@ margin-bottom: 20px;
 }
 .last {
 width: 80%;
-height: 400px;
+height: auto;
 
 margin: auto;
 border-radius: 18px;
@@ -117,7 +117,7 @@ color: black;
 }
 .footer {
 width: 80%;
-height: 300px;
+height: auto;
 display: grid;
 grid-template-columns: repeat(6, 1fr);
 grid-template-rows: auto;

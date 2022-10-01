@@ -7,7 +7,7 @@
   .review > .blog {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 300px;
+    grid-template-rows: auto;
     margin-top: 20px;
   }
   .review > .blog > div {
@@ -38,7 +38,7 @@
   #integration {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 500px;
+    grid-template-rows: auto;
     justify-content: center;
     margin-top: 100px;
     background-color: #f3f3f3;
@@ -129,7 +129,7 @@
     margin: auto;
     border-radius: 10px;
     background-color: #f7b801;
-    height: 600px;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
