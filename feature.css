@@ -136,3 +136,58 @@ text-decoration: none;
 color: #f7b801;
 text-decoration: none;
 }
+@media all and (min-width:768px) and (max-width:1024px){
+
+  .container-fluid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    border: 0px solid black;
+  }
+  #imgg{
+    width:40%
+  }
+  @media all and (min-width:280px) and (max-width:768px){
+
+    .blog {
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      gap: 10px;
+      }
+      .review>.blog> div {
+      padding: 10px;
+      background-color: #25cf60;
+      
+      }
+      .blog > div > img {
+      width: 100%;
+      margin-bottom: 20px;
+      }
+
+ 
+    }
+    .footer {
+      width: 80%;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows:repeat(6,1fr);
+      margin: auto;
+      margin-top: 90px;
+      }
+      .footer > div {
+      display: flex;
+      flex-direction: column;
+      } 
+      .footer > div > a {
+      color: gray;
+      text-decoration: none;
+      }
+      .footer > div > a:hover {
+      color: #f7b801;
+      text-decoration: none;
+      }
+
+  }

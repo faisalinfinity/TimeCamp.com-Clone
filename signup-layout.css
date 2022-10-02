@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 900px;
+    height: auto;
   }
   #main > div {
     width: 30%;
@@ -21,6 +21,7 @@
     border: 0 solid black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 14px;
+    margin-top: 80px;
   }
   form {
     text-align: center;
@@ -58,14 +59,73 @@
     border: 1px solid grey;
   }
   @media all and (min-width:768px) and (max-width:1024px){
+    #main {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
 
-   
+    #main > div {
+      width: 70%;
+      height: 60%;
+      border: 0 solid black;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 14px;
+      margin-top: 80px;
+    }
+    form {
+      
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 4px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    form > div > p {
+      width: 80%;
+      margin: auto;
+    }
 
 
 
 
   }
   @media all and (min-width:280px) and (max-width:768px){
+    #main {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+    #main > div {
+      width: 90%;
+      height: 50%;
+      border: 0 solid black;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 14px;
+      margin-top: 80px;
+    }
+    form {
+      
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 4px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    form > div > p {
+      width: 80%;
+      margin: auto;
+    }
 
 
 }

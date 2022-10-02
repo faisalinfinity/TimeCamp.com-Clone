@@ -103,7 +103,7 @@
   }
   @media all and (min-width:280px) and (max-width:768px){
     #team {
-    width: 100%;
+    width: auto;
     height: auto;
     background-color: #25cf60;
     text-align: center;
@@ -208,13 +208,16 @@
   #Track{
     height: auto;
   }
+  #body>div{
+    margin-top: 50px;
+  }
 
 
 
   }
   @media all and (min-width:768px) and (max-width:1024px){
     #team {
-    width: 90%;
+    width: 80%;
     height: 100px;
     background-color: #25cf60;
     text-align: center;
@@ -235,8 +238,8 @@
     display: block;
   }
   #top-black {
-    width: 90%;
-    height: 450px;
+    width: 80%;
+    height: auto;
     border-radius: 10px;
     background-color: black;
     margin: auto;
@@ -263,7 +266,7 @@
   #top-black > div {
     border: 0 solid white;
     width: 50%;
-    height: 70%;
+    height: auto;
     margin: auto;
 
     justify-content: start;
@@ -320,6 +323,7 @@
     display: block;
     width: 50%;
   }
+
 
      
 

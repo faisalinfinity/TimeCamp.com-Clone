@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>TimeCamp</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -95,37 +95,9 @@
       </form></div>
     </div>
   </body>
+  <link rel="stylesheet" href="sign-in.js">
 </html>
-<script>
-
-  stored=JSON.parse(localStorage.getItem("userdata"))
-
-  form=document.querySelector("form")
-  form.addEventListener("submit",function(){
-    event.preventDefault()
-
-    
-
-    stored.forEach(function(el){
-      if(form.email.value==el.email && form.password.value==el.password){
-        alert("Login Success")
-        window.open("Tracktime-Navbar.html")
-      }else if(form.email.value==el.email && form.password.value!==el.password){
-
-        alert("Incorrect Password")
-        
-      }else if(form.email.value!==el.email){
-       
-        alert("You're not Registered \n Sign Up first")
-
-        window.open("Signup-layout.html")
-
-      }
-        
-    })
-    
-  })
 
 
+ 
 
-</script>

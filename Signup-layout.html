@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Sign Up</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -71,37 +71,6 @@
       </div>
     </div>
   </body>
+  <link rel="stylesheet" href="sign-up.js">
 </html>
-<script>
- form= document.querySelector("form")
- data= JSON.parse(localStorage.getItem("userdata")) || []
- form.addEventListener("submit",function(event){
-  event.preventDefault()
-  let obj={
-    email:form.email.value,
-    password:form.password.value,
-    phone:form.phone.value
-  }
-  data.push(obj)
 
-  if(form.email.value=="" || 
-    form.password.value=="" || form.phone.value==""){
-
-      alert("Fill all details first")
-
-
-
-    }else{
-
-  localStorage.setItem("userdata",JSON.stringify(data))
-    }
-  
-    form.email.value=null
-    form.password.value=null
-    form.phone.value=null
-
-
-})
-
-
-</script>
